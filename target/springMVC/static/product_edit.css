@@ -1,0 +1,148 @@
+body{
+    background: url("../static/img/1.jpg") no-repeat;
+    background-size: 100%;
+
+}
+.editTop{
+
+}
+.editTail{
+    width: 700px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.editTail_table1{
+
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 50px;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-bottom-style:solid ;
+    border-top-style:solid  ;
+    border-left-style:solid ;
+    border-right-style:solid ;
+    border-color: #AEAEB0;
+    box-shadow: 6px 1px 200px #888888;/*出现阴影*/
+
+
+}
+.editTail_title{
+    height: 100px;
+
+}
+
+.addTail_title{
+
+
+}
+
+.editTail_title_first{
+    display:block; /*将tr设置为块体元素*/
+    width: 130px;
+    margin-top:20px ;
+    margin-right: auto;
+    margin-left: auto;
+    font-size:20px;
+}
+
+.editTail_title_first td{
+    front-size:A3;
+}
+.editTail_table2_second{
+    display:block; /*将tr设置为块体元素*/
+    width: 600px;
+    margin-top: 10px;
+    margin-left: 80px;
+
+
+}
+
+.editTail_table2_second td *{
+    margin: 0 50px;
+
+}
+
+.editTail_table2_second input{
+    width:245px ;
+    padding-top:10px ;
+    padding-bottom: 10px;
+
+}
+
+.editTail_table2_third{
+    display:block; /*将tr设置为块体元素*/
+    width: 600px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.editTail_table2_third input{
+    padding: 10px 50px;
+}
+.editTail_table2_third select{
+
+    padding: 10px 11px;
+}
+.editTail_table2_third td *{
+    margin: 0 50px;
+}
+.editTail_table2_fourth{
+    display:block; /*将tr设置为块体元素*/
+    width: 600px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.editTail_table2_fourth input{
+
+    padding: 20px;
+}
+
+
+.editTail_table2_fourth td *{
+    margin: 0 50px;
+}
+.editTail_table2_fifth{
+    display:block; /*将tr设置为块体元素*/
+    width: 480px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.editTail_table2_fifth input{
+    width:240px ;
+    padding-top:10px ;
+    padding-bottom: 10px;
+}
+.editTail_table2_fifth td *{
+    margin: 0 50px;
+}
+.editTail_table2_sixth{
+    display:block; /*将tr设置为块体元素*/
+    width: 600px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.editTail_table2_sixth td *{
+    margin: 0 45px;
+
+}
+.editTail_table2_sixth input{
+    border: 0;
+    background-color:rgb(64,158,255);
+    border-radius:5px;
+    font-family: 宋体;
+    font-size: 15px;
+    color:rgb(254,254,255);
+    padding: 8px 20px;
+    font-weight:bold;
+    box-shadow: 0 10px rgb(8,128,215);
+    transition: all 0.2s;
+}
+
+.editTail_table2_sixth input:active{
+    color: rgb(254,254,255);
+    box-shadow: 0 2px rgb(64,158,255);
+    transform: translateY(8px);/*如果是正值就往下移动*/
+}

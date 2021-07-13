@@ -1,0 +1,2 @@
+com.tkn.ssm.product.controller.ProductController=org.springframework.stereotype.Component
+com.tkn.ssm.product.service.impl.ProductServiceImpl=org.springframework.stereotype.Component

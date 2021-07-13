@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tkn.ssm.product.dao.ProductMapper">
+
+    <!--type的属性要在mybatis.xml中起别名或者用全路径-->
+    <resultMap id="ProductResultMapper" type="product">
+        <!--column是数据库中的列名 property是模型类中的属性值-->
+        <id column="product_id" property="productId"
+            jdbcType="INTEGER"/>
+        <result column="product_name" property="productName"
+                jdbcType="VARCHAR" />
+        <result column="product_type" property="productType"
+                jdbcType="VARCHAR" />
+        <result column="can_sale" property="canSale"
+                jdbcType="VARCHAR" />
+        <result column="manufacturer" property="manufacturer"
+                jdbcType="VARCHAR"/>
+
+    </resultMap>
+    <!--parameterType是传入参数类型,resultMap是返回值类型-->
+    <insert id="addProduct" parameterType="product">
+        insert into product (product_name,
+                            product_type,
+                            can_sale,
+                            manufacturer) values (#{productName},
+                            #{productType},
+                            #{canSale},
+                            #{manufacturer})
+    </insert>
+
+    <delete id="deleteProduct" parameterType="Integer">
+        delete from product where product_id=#{productId};
+    </delete>
+
+    <update id="updateProduct" parameterType="product">
+        update product set product_name=#{productName},
+                           product_type=#{productType},
+                           can_sale=#{canSale},
+                           manufacturer=#{manufacturer} where product_id=#{productId}
+    </update>
+
+    <select id="findProductById" parameterType="Integer" resultMap="ProductResultMapper">
+        select * from product WHERE product_id=#{productId};
+    </select>
+
+    <select id="findAllProduct" resultMap="ProductResultMapper">
+        select * from product;
+    </select>
+    </mapper>

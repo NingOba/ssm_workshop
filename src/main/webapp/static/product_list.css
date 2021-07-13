@@ -1,0 +1,138 @@
+body{
+    background: url("../static/img/1.jpg") no-repeat;
+    background-size: 100%;
+
+
+}
+/**/
+.listTop{
+
+}
+/*包含最大表格的块*/
+.listTail{
+
+    width:1000px ;
+    border-radius:10px ;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom: 0;
+    border-color:#AEAEB0;
+    margin: 0 auto;
+    margin-top: 150px;
+
+}
+
+/*listTitle块中的最大表格*/
+.listTable_top{
+    border-collapse: collapse;/*去除表格的双重线*/
+    box-shadow: 0px 0px 200px #888888;/*出现阴影*/
+    /*box-shadow: Xpx Ypx Zpx #888888;
+    X：横向阴影（偏移值）
+    Y：纵向阴影（偏移值）
+    Z：渐变效果
+    #888888：阴影颜色
+    */
+}
+
+/*listTitle表格中的标题和注册按钮块*/
+.listTitle{
+    height: 80px;
+    border-width:1px ;
+    border-bottom-style:solid ;
+    border-color: #AEAEB0;
+}
+
+/*标题块*/
+.listTitle_top{
+    width:100px ;
+    padding-left: 450px ;
+    height: 40px;
+
+}
+/*listTitle块中的按钮块*/
+.listAdd_button{
+    margin-top: 0px;
+    padding-left: 550px;
+    width: 100px;
+    height: 30px;
+
+}
+/*listTitle块中的按钮*/
+.listAdd_button input{
+    border-color:rgb(169,172,255) ;
+    background-color:rgb(64,158,255);
+    border-radius:5px;
+    font-family: 宋体;
+    font-size: 15px;
+    color:rgb(254,254,255);
+    padding: 8px 20px;
+    font-weight:bold;
+}
+/*对listTitle块中的按钮动态化*/
+.listAdd_button input:hover{
+    background-color: rgb(255,255,255);
+    color:rgb(64,158,255);
+}
+/*listTitle块中中间块*/
+.tableMain{
+    width: 950px;
+    margin: 0 auto;
+    height: 350px;
+
+
+}
+/*listTitle块中 中间块的表格*/
+.Listing{
+
+    border-color: #AEAEB0;
+
+}
+/*listTitle块中 中间块的表格 中的列*/
+.Listing td{
+    border-width: 1px;
+    border-color: #AEAEB0;
+    border-bottom-style:solid ;
+
+}
+
+
+/*对内容的每行进行鼠标放置处理*/
+.content{
+    opacity: 0.7;
+    transition: all 0.4s;
+}
+.content:hover{
+    background-color: #B7B7B7;
+    opacity: 1;
+    transform: translateX(-25px); /*translateX：横坐标；鼠标放上去有向左移动的效果*/
+    box-shadow: 0 10px 20px darkgrey; /*块周围有阴影*/;
+}
+
+
+/*设置修改与删除按钮*/
+.input1{
+    border-color:rgb(169,172,255) ;
+    background-color:rgb(236,245,255);
+    border-radius:5px;
+    font-family: 宋体;
+    font-size: 10px;
+    color:rgb(169,172,255);
+    padding: 4px 10px;
+}
+.input2{
+    border-color:rgb(245,140,127);
+    background-color:#FEF0F0;
+    border-radius:5px;
+    font-family: 宋体;
+    font-size: 10px;
+    color:rgb(245,140,127);
+    padding: 4px 10px
+}
+
+.input1:hover{
+    background-color: rgb(255,255,255);
+}
+.input2:hover{
+    background-color: rgb(255,255,255);
+}
+
